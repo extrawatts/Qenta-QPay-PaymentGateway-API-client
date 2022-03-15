@@ -1,0 +1,17 @@
+{
+  "CUSTOMERID+is+missing": "Customer ID is required",
+  "Currency+is+missing": "Currency is required",
+  "Language+is+missing": "Language is required",
+  "Order+description+is+missing": "Order description is required",
+  "SUCCESSURL+is+missing": "Success URL is required",
+  "FAILUREURL+is+missing": "Failure URL is required",
+  "CANCELURL+is+missing": "Cancel URL is required",
+  "SERVICEURL+is+missing": "Service URL is required",
+  "IP-Address+is+missing": "IP Address is required",
+  "USER_AGENT+is+missing": "User Agent is required",
+  "FINGERPRINT+is+missing": "Fingerprint is required",
+  "REQUESTFINGERPRINTORDER+is+missing": "Request Fingerprint Order is required",
+  "FINGERPRINT+is+invalid": "Fingerprint is invalid",
+  "REQUESTFINGERPRINTORDER+is+invalid": "Request Fingerprint Order is invalid",
+  "CustomerStatemen+is+missing": "Customer Statement is required"
+}
