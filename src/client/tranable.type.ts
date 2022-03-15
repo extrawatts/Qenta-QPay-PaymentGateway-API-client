@@ -20,10 +20,10 @@ export type entryTransactionArgs = {
 }
 
 export type entryTransactionResult = Result & {
-  customerId: string,
-  shopId: string,
-  language: string,
-  secret: string,
+  customerId: string
+  shopId: string
+  language: string
+  secret: string
   pluginVersion: string
   confirmUrl: string
   orderReference?: string
@@ -45,10 +45,10 @@ export type entryTransactionResult = Result & {
 }
 
 export type execTransactionArgs = {
-  customerId: string,
-  shopId: string,
-  language: string,
-  secret: string,
+  customerId: string
+  shopId: string
+  language: string
+  secret: string
   pluginVersion: string
   confirmUrl: string
   orderReference?: string

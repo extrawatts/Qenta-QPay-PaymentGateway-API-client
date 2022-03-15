@@ -4,7 +4,7 @@ import {
   entryTransactionArgs,
   entryTransactionResult,
   execTransactionArgs,
-  execTransactionResult
+  execTransactionResult,
 } from './tranable.type'
 
 // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
@@ -35,7 +35,7 @@ export default <T extends Constructor<Client>>(Base: T) =>
       }
 
       return this.requestFingerPrint<entryTransactionArgs, entryTransactionResult>({
-        ...defaultData
+        ...defaultData,
       })
     }
 
