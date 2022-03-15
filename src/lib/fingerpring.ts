@@ -93,7 +93,6 @@ export class Fingerprint {
             ...fingerPrintData
 
         } as unknown as entryTransactionResult;
-        console.log(entryTransactionResult);
         return entryTransactionResult;
     }
 }
