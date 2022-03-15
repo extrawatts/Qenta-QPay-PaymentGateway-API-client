@@ -4,14 +4,14 @@
   "version": "1.0.0",
   "author": "TokenSuite",
   "license": "MIT",
-  "repository": "pepabo/qenta",
-  "homepage": "https://github.com/pepabo/qenta",
+  "repository": "extrawatts/Qenta-QPay-PaymentGateway-API-client",
+  "homepage": "https://github.com/extrawatts/Qenta-QPay-PaymentGateway-API-client",
   "keywords": [
     "api",
     "client",
     "payment"
   ],
-  "bugs": "https://github.com/pepabo/qenta/issues",
+  "bugs": "https://github.com/extrawatts/Qenta-QPay-PaymentGateway-API-client/issues",
   "main": "./lib/qenta.js",
   "types": "./lib/qenta.d.ts",
   "files": [
