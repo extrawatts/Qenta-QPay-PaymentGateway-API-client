@@ -6,7 +6,7 @@ Purchase example
 
 ### Node.js
 
-```js
+```ts
 import { default as QENTA, ENUMS } from './qenta';
 
 const qenta = new QENTA({
