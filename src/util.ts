@@ -5,7 +5,7 @@ export function generateID(key: string): string {
   return `${key}-${createHash('md5').update(`${key}-${new Date().toISOString()}`).digest('hex')}`
 }
 
-export function generatePluginVersion() {
+export function generatePluginVersion(): string {
   const version = Lib.Name + ";" + Lib.Version + ";" + Plugin.Name + ";" + Plugin.Version;
   return Buffer.from(version).toString('base64');
 }

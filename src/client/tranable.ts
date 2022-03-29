@@ -34,7 +34,7 @@ export default <T extends Constructor<Client>>(Base: T) =>
         customerStatement: args.customerStatement,
       }
 
-      return this.requestFingerPrint<entryTransactionArgs, entryTransactionResult>({
+      return await this.requestFingerPrint<entryTransactionArgs, entryTransactionResult>({
         ...defaultData,
       })
     }

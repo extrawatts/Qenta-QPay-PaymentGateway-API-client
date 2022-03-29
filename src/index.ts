@@ -1,5 +1,6 @@
 import { default as QENTA, ENUMS } from './qenta';
 
+
 const qenta = new QENTA({
     baseUrl: 'https://api.qenta.com/page/init-server.php/init',
     customerId: 'D200001',
@@ -8,9 +9,31 @@ const qenta = new QENTA({
     shopId: '',
 })
 
-const orderID = "999";
-const amount = 128;
 
+const orderID = 'Order ID'
+const amount = 1234
+
+const entryRes = async () => {
+    await qenta.entryTransaction({
+        pluginVersion: "TWFnZW50bzsxLjkuMy40O1FlbnRhQ0VFX1FQYXkgMy40LjA7UWVudGEvQ2hlY2tvdXRQYWdlOzQuMi43",
+        confirmUrl: "https://www.example.com/confirm",
+        orderReference: orderID,
+        amount: amount,
+        currency: "USD",
+        paymentType: ENUMS.PaymentType.CCARD,
+        orderDescription: "melihyuxel@gmail.com Mel Yuk",
+        successUrl: "https://www.example.com/success",
+        pendingUrl: "https://www.example.com/pending",
+        cancelUrl: "https://www.example.com/cancel",
+        failureUrl: "https://www.example.com/failure",
+        serviceUrl: "https://www.example.com/service",
+        consumerMerchantCrmId: "02362d0e04af832159f01588c8337107",
+        consumerIpAddress: "127.0.0.1",
+        consumerUserAgent: "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:98.0) Gecko/20100101 Firefox/98.0",
+        customerStatement: " Id:4h7v8D6Q9q"
+    });
+}
+console.log(entryRes);
 qenta.entryTransaction({
     pluginVersion: "TWFnZW50bzsxLjkuMy40O1FlbnRhQ0VFX1FQYXkgMy40LjA7UWVudGEvQ2hlY2tvdXRQYWdlOzQuMi43",
     confirmUrl: "https://www.example.com/confirm",
