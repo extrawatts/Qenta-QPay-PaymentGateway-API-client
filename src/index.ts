@@ -6,7 +6,7 @@ const qenta = new QENTA({
     customerId: 'D200001',
     language: 'en',
     secret: 'B8AKTPWBRMNBV455FG6M2DANE99WU2',
-    shopId: '',
+    shopId: "",
 })
 
 
@@ -22,10 +22,10 @@ const entryRes = async () => {
         currency: "USD",
         paymentType: ENUMS.PaymentType.CCARD,
         orderDescription: "melihyuxel@gmail.com Mel Yuk",
-        successUrl: "https://www.example.com/success",
+        successUrl: "https://www.example.com/return",
         pendingUrl: "https://www.example.com/pending",
-        cancelUrl: "https://www.example.com/cancel",
-        failureUrl: "https://www.example.com/failure",
+        cancelUrl: "https://www.example.com/return",
+        failureUrl: "https://www.example.com/return",
         serviceUrl: "https://www.example.com/service",
         consumerMerchantCrmId: "02362d0e04af832159f01588c8337107",
         consumerIpAddress: "127.0.0.1",

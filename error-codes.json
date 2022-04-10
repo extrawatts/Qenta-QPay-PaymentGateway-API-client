@@ -13,5 +13,6 @@
   "REQUESTFINGERPRINTORDER+is+missing": "Request Fingerprint Order is required",
   "FINGERPRINT+is+invalid": "Fingerprint is invalid",
   "REQUESTFINGERPRINTORDER+is+invalid": "Request Fingerprint Order is invalid",
-  "CustomerStatemen+is+missing": "Customer Statement is required"
+  "CustomerStatement+is+missing": "Customer Statement is required",
+  "ShopId+is+missing": "Shop ID is required"
 }
